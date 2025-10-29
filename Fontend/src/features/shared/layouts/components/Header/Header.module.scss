@@ -1,0 +1,31 @@
+.header {
+  background: linear-gradient(#d8dee9, #c5cbd6);
+  padding: 4px 10px;
+  border-bottom: 1px solid #aaa;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.menu-item {
+  color: #222;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+
+  &:hover {
+    background: #2d6cdf;
+    color: #fff;
+  }
+
+  &.active {
+    background: #1e56b0;
+    color: #fff;
+  }
+}

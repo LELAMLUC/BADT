@@ -1,0 +1,32 @@
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  color: #333;
+  font-size: 14px;
+  margin: 8px;
+  input[type="checkbox"] {
+    accent-color: #007bff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  &.left {
+    flex-direction: row-reverse;
+  }
+
+  &.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  .label {
+    margin: 0;
+  }
+
+  &.important {
+    font-weight: 600;
+    color: #000;
+  }
+}

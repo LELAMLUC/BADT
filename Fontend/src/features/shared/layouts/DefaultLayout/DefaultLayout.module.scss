@@ -1,0 +1,10 @@
+.wrapper {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.container {
+  align-self: stretch;
+  width: 100%;
+}

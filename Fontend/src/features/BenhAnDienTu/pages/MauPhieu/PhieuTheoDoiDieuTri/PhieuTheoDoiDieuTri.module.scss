@@ -1,0 +1,56 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  max-width: 1900px;
+  padding: 20px 20px;
+}
+
+.header {
+  display: flex;
+}
+
+.content {
+  margin-top: 20px;
+  display: flex;
+}
+
+.grid-master {
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: 20px;
+
+  /* Bọc hai cột song song */
+  .form-row {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .left {
+    flex: 3; /* 60% */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .mid {
+    flex: 2; /* 40% */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 16px;
+    background-color: #fafafa;
+  }
+
+  .row-1 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding-top: 8px;
+  }
+}

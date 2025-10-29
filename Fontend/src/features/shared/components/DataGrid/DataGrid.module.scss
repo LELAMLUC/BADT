@@ -1,0 +1,54 @@
+.gridWrapper {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  background: #dce3f0;
+  font-weight: 600;
+  padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid #bbb;
+}
+
+.tableWrapper {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th,
+  td {
+    padding: 0.3rem 0.4rem;
+    border-bottom: 1px solid #eee;
+  }
+
+  th {
+    background: #f1f4f9;
+    cursor: pointer;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  tr:hover {
+    background: #f0f6ff;
+  }
+}
+
+.selectedRow {
+  background: #cde1ff !important;
+}
+
+.sortIcon {
+  font-size: 0.7rem;
+  margin-left: 0.2rem;
+  color: #444;
+}

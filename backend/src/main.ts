@@ -13,6 +13,9 @@ async function bootstrap() {
     .build();
 
   const document = SwaggerModule.createDocument(app, config);
+  if (document.components && document.components.schemas) {
+    delete document.components.schemas;
+  }
   SwaggerModule.setup("api/docs", app, document);
 
   await app.listen(3000);
